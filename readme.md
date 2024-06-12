@@ -2,7 +2,7 @@
 ![cover](https://i.imgur.com/68hqWD5.png)
 *By Militello Giuseppe*
 
-### Introduction
+### 📝Introduction
 >ES6 est la version la plus récente de la norme ECMAScript, qui est utilisée pour définir le langage JavaScript. Elle a été publiée en 2015 et a apporté de nombreuses nouvelles fonctionnalités et améliorations au langage, telles que les classes, les fonctions fléchées, les promesses et bien d'autres.
 
 >L'une des principales caractéristiques d'ES6 est sa capacité à rendre le code JavaScript plus concis et plus facile à lire, en introduisant de nouvelles constructions de langage qui permettent aux développeurs d'écrire du code plus propre et plus maintenable.
