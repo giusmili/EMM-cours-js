@@ -13,7 +13,7 @@
 
 >En fin de compte, ES6 a considérablement amélioré la façon dont les développeurs travaillent avec JavaScript, et est devenu une norme pour de nombreuses applications Web modernes.
 
-## NPM
+## 💡NPM
 > #### <i class="fa fa-gear fa-spin fa-2x" style="color: #2980b9; vertical-align: middle; "></i> <span style="font-weight:normal">Configuration</span>
 ```csd=
 vérifier la version npm
