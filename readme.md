@@ -26,7 +26,7 @@ Cibler le répertoire "SRC" et commande :npm run build
 Nota bene : pour installer le CLI faire d'abord npm init pour le package.json
 ```
 
-## Package jSon de configuration:
+## 🧑‍💻Package jSon de configuration:
 ```json=
 {
   "name": "my_project",
