@@ -9,18 +9,22 @@ console.table(lang);
 console.log(lang.length);
 
 lang.map(index => {
-    console.log(index);
+  console.log(index);
 });
 
 for (let data in lang) {
-    console.log(`${data} : ${lang[data]}`);
+  console.log(`${data} : ${lang[data]}`);
 }
 
 const User = {
-    nom: "Doe",
-    prenom: "John",
-    ville: "NY",
-    pays: "USA"
+  nom: "Doe",
+  prenom: "John",
+  ville: "NY",
+  pays: "USA"
 };
 console.table(User);
 console.log(Object.keys(User), Object.values(User));
+
+for (let rows in User) {
+  console.log(`${rows} : ${User[rows]}`);
+}
