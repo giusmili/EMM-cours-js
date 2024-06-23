@@ -2,6 +2,11 @@
   const content = "Bonjour ici c'est javascript et toi t'es qui?";
   let result = content.split(" ");
   console.table(result);
+  const element_footer = document.querySelector("footer time");
+
+  let dates = new Date().getFullYear();
+  let dateEn = new Date();
+  const attrTime = element_footer.setAttribute("datatime", dateEn.toLocaleDateString("en-En"));
 
   /* table */
 
@@ -36,4 +41,6 @@
 
   const res = product.filter(row => row.price > 8); /* méthodes : find, map et filter */
   console.table(res);
+
+  element_footer.innerText = dates;
 })();
