@@ -1,37 +1,46 @@
-const content = "Bonjour ici c'est javascript et toi t'es qui?";
-let result = content.split(" ");
-console.table(result);
+(() => {
+  const content = "Bonjour ici c'est javascript et toi t'es qui?";
+  let result = content.split(" ");
+  console.table(result);
+  const element_footer = document.querySelector("footer time");
 
-/* table */
+  let dates = new Date().getFullYear();
+  let dateEn = new Date();
+  const attrTime = element_footer.setAttribute("datatime", dateEn.toLocaleDateString("en-En"));
 
-const lang = ["html", "css", true];
-console.table(lang);
-console.log(lang.length);
+  /* table */
 
-lang.map(index => {
-  console.log(index);
-});
+  const lang = ["html", "css", true];
+  console.table(lang);
+  console.log(lang.length);
 
-for (let data in lang) {
-  console.log(`${data} : ${lang[data]}`);
-}
+  lang.map(index => {
+    console.log(index);
+  });
 
-const User = {
-  nom: "Doe",
-  prenom: "John",
-  ville: "NY",
-  pays: "USA"
-};
-console.table(User);
-console.log(Object.keys(User), Object.values(User));
+  for (let data in lang) {
+    console.log(`${data} : ${lang[data]}`);
+  }
 
-for (let rows in User) {
-  console.log(`${rows} : ${User[rows]}`);
-}
+  const User = {
+    nom: "Doe",
+    prenom: "John",
+    ville: "NY",
+    pays: "USA"
+  };
+  console.table(User);
+  console.log(Object.keys(User), Object.values(User));
 
-/* tableau multidimensionnel */
-const product = [{ name: "car", price: 6000 }, { name: "Bike", price: 150 }, { name: "phone", price: 700 }, { name: "Watch", price: 200 }, { name: "pen", price: 8 }, { name: "bag", price: 50 }];
-console.table(product);
+  for (let rows in User) {
+    console.log(`${rows} : ${User[rows]}`);
+  }
 
-const res = product.filter(row => row.price > 8); /* méthodes : find, map et filter */
-console.table(res);
+  /* tableau multidimensionnel */
+  const product = [{ name: "car", price: 6000 }, { name: "Bike", price: 150 }, { name: "phone", price: 700 }, { name: "Watch", price: 200 }, { name: "pen", price: 8 }, { name: "bag", price: 50 }];
+  console.table(product);
+
+  const res = product.filter(row => row.price > 8); /* méthodes : find, map et filter */
+  console.table(res);
+
+  element_footer.innerText = dates;
+})();
