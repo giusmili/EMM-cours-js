@@ -29,3 +29,6 @@ nav ol li{
 .table-responsive table tr td:nth-child(2){
     text-align: center;
 }
+section meter{
+    height: 1rem;
+}
