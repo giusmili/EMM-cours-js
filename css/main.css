@@ -2,5 +2,30 @@
 
 
 header h1{
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 3.5rem;
+    border: 0;
+}
+
+section h2{
+    font-size: x-large;
+    font-weight: 400;
+    border: 0;
+}
+
+
+figure img{
+    display: inline-block;
+    height: 15rem;
+}
+nav ol li{
+    font-size: 2.5rem;
+}
+.table-responsive table{
+    width: 100%;
+}
+.table-responsive table tr td:nth-child(2){
     text-align: center;
 }
